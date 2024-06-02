@@ -1,0 +1,269 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Fondo oscuro para coherencia visual */
+    color: #fff; /* Texto blanco para alto contraste */
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #000; /* Consistente con el diseño general */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+  
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover, .nav-link:focus {
+    color: #e94560; /* Destacar enlaces al interactuar */
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #e94560; /* Subrayado estilizado para enlaces */
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.nav-link:hover::after, .nav-link:focus::after {
+    width: 100%;
+    left: 0;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.carousel-inner {
+    width: 100%;
+    max-height: 600px; /* Ajusta esta altura según tus necesidades */
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.course-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.course-card {
+    width: 300px;
+    border: 1px solid #fff; /* Borde blanco para destacar */
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.course-card:hover {
+    transform: translateY(-10px); /* Elevación visual al pasar el cursor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.course-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.course-card:hover img {
+    transform: scale(1.05); /* Sutil aumento de la imagen */
+}
+
+.course-info {
+    padding: 15px;
+}
+
+.btn {
+    display: block;
+    width: 200px;
+    height: 55px;
+    background-color: #e94560;
+    text-align: center;
+    line-height: 50px;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 20px auto; /* Centrado automático */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Suaviza la transición de color y transformación */
+
+}
+
+
+
+.responsive-image {
+    max-width: 800px; /* Ajusta el ancho máximo como prefieras */
+    height: auto; /* Mantiene la proporción */
+    display: block; /* Elimina problemas de alineación, asegurando que la imagen no tenga espacio extra abajo */
+    margin: 0 auto; /* Centra la imagen si la sección está centrada */
+}
+
+
+
+
+.btn:hover, .btn:focus {
+    background-color: #816bff; /* Color más claro al pasar el cursor */
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+    cursor: pointer; /* Cambia el cursor a un puntero para indicar que es clickeable */
+}
+
+
+
+.centered-content {
+    text-align: center; /* Centra el texto y los elementos en línea */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinea los elementos flex hijos (como bloques y imágenes) al centro */
+    justify-content: center;
+}
+
+
+
+
+.pricing-table {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.plan {
+    background: #333; /* Fondo oscuro */
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px; /* Ancho de cada plan */
+    text-align: center;
+}
+
+.plan.featured {
+    background: #4CAF50; /* Resaltar el plan avanzado */
+}
+
+.plan h3 {
+    font-size: 24px;
+}
+
+.plan span {
+    font-size: 28px;
+    display: block;
+}
+
+.btn {
+    color: #fff;
+    background-color: #007BFF;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+
+
+
+footer {
+    background-color: #000; /* Fondo negro */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer2 {
+    background-color: #010202; /* Consistente con el diseño oscuro */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-container2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-link, .footer-icons a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.icon {
+    width: 30px; /* Tamaño apropiado para iconos */
+    height: 30px;
+    margin: 0 5px;
+}
+
+.footer-logo {
+    max-width: 200px; /* Ajuste para coherencia visual */
+    height: auto;
+}
+
+
+
+
+.teacher {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.teacher img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}

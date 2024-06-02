@@ -1,0 +1,102 @@
+/* Reset y ajustes generales */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    line-height: 1;
+    color: #ffffff; /* Color general del texto */
+    background-color: #1a1a2e; /* Fondo general */
+}
+
+header {
+    background-color: #0f3460;
+    padding: 10px;
+    text-align: left; /* Alinear el título a la izquierda */
+}
+
+h1 {
+    color: #fff;
+    font-size: 2em;
+}
+
+main {
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: #1a1a2e;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center; /* Alinear el contenido de la sección al centro */
+}
+
+h2 {
+    color: #e94560;
+    font-size: 1.7em;
+    margin-bottom: 20px;
+}
+
+p, li {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    background-color: #0f3460;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+img {
+    width: 50%; 
+    height: auto;
+    display: block;
+    margin: 10px auto; /* Centrar imágenes */
+}
+
+a {
+    display: block;
+    width: 200px;
+    height: 50px;
+    background-color: #e94560;
+    text-align: center;
+    line-height: 50px;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 20px auto; /* Centrar enlace */
+    transition: all 0.2s ease;
+}
+
+a:hover {
+    background-color: #c83448;
+}
+
+footer {
+    background-color: #16213e;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    color: #fff;
+    font-size: 14px;
+}
